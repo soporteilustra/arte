@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Bubbler+One|Open+Sans:300,700');
+
+body {
+  font-family: 'Bubbler One', sans-serif;
+}
+header {
+  background: #fff;
+  border-bottom: 1px solid rgba(189, 189, 189, 0.5);
+  padding: .8em;
+  box-shadow: 0px 1px 2px rgba(189, 189, 190, 0.5);
+}
+header .brand {
+  display: flex;
+  align-items: center;
+}
+header .brand img {
+  max-height: 60px;
+}
+header .brand h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: .8em;
+  text-transform: uppercase;
+}
+header .menu a {
+  color: #424242;
+  text-decoration: none;
+}
+.cover {
+  width: 100%;
+  height: 600px;
+  position: relative;
+}
+.cover .bgfade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #fafafa;
+  animation-name: fading;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+}
+.bgfade:nth-child(1) {
+  background-image: url(../media/bgfour.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation-delay: 12s;
+}
+.bgfade:nth-child(2) {
+  background-image: url(../media/bgthree.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation-delay: 8s;
+}
+.bgfade:nth-child(3) {
+  background-image: url(../media/bgtwo.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation-delay: 4s;
+}
+.bgfade:nth-child(4) {
+  background-image: url(../media/bgone.png);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  animation-delay: 0s;
+}
+@keyframes fading {
+  0% {
+    opacity: 1;
+  }
+  20% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1 {
+  font-weight: 700;
+}
+#history .bio {
+  padding: 5em 0em 2em 7em;
+}
+#history .bio p {
+  font-weight: 400;
+  color: #212121;
+  text-align: justify;
+}
+#history .img {
+  text-align: right;
+  padding: 0;
+}
+#gallery {
+  padding: 6em 3em;
+}
+#gallery .item {
+  padding: 0;
+}
+#gallery .item img {
+  width: 100%;
+}
+#gallery .item figcaption {
+}
+
+#world {
+  padding: 2em;
+}
+#world h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+#world .feed li {
+  margin-bottom: .5em;
+}
+#world .feed li h4 {
+  font-size: .9em;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 300;
+}
+#world .feed li h4:nth-child(3) {
+  font-style: italic;
+}
+#contact {
+  padding: 2em;
+}
+#contact h4 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 1em;
+  margin: 0;
+}
+#contact h6 {
+  margin-top: 1em;
+}
+
+footer {
+  background: #000;
+  height: 50px;
+  border-top: 2px solid #bdbdbd;
+}
